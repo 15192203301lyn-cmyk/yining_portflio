@@ -1,0 +1,57 @@
+/*
+ * 全站唯一的样式入口。
+ * 未来的视觉 skill 应继续修改本文件，不要为每个页面创建重复 CSS。
+ */
+
+:root {
+  --content-width: 72rem;
+  --page-padding: 1.25rem;
+  font-family: system-ui, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.site-header,
+main,
+footer {
+  width: min(100% - (2 * var(--page-padding)), var(--content-width));
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.25rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+main {
+  min-height: 70vh;
+  padding-block: 4rem;
+}
+
+footer {
+  padding-block: 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
